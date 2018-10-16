@@ -9,5 +9,18 @@ function displayNextButton(){
 }
 
 function initDocument(){
-    autocomplete(document.getElementById("myInput"), ["Jojo 1", "Pas Jojo", "Joja 1"]);
+    loadAutoComplete().then(function (data){
+        autocomplete(document.getElementById("myInput"), data);
+    });
+}
+
+function loadAutoComplete(){
+    return new Promise(function(succes){
+        var animeList = new Array();
+        data.forEach(function(value, key){
+            animeList.push(value.title_en);
+            animeList.push(value.title_jp);            
+        });
+        succes(animeList);
+    });
 }
