@@ -2,6 +2,7 @@ var difficulty = 1;
 var currentSong;
 var currentPlayer;
 var result;
+var i;
 
 function nextSong(){
     document.getElementById("result").style.visibility = "hidden";
@@ -21,20 +22,26 @@ function playAudio(songIndex){
     player.currentTime = song.timestamp[timestampIndex];
 
     player.play().then(function (){
-
         document.getElementById("currentTime").innerText = "";
-        result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ (player.currentTime.toFixed(0) - song.timestamp[timestampIndex])+ ' s';},1000);
+        //result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ (player.currentTime.toFixed(0) - song.timestamp[timestampIndex])+ ' s';},1000);
         document.getElementById("animeImageImg").style.filter = "blur(10px)";
         document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
         switch(difficulty){
             case 1: 
-                setTimeout(function() { player.pause(); }, 30000);
+                i = 31;
+                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
+                setTimeout(function() { player.pause(); clearInterval(result);}, 30000);
                 break;
             case 2: 
-                setTimeout(function() { player.pause(); }, 20000);
+                i = 21;
+                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
+                setTimeout(function() { player.pause(); clearInterval(result);}, 20000);
                 break;
             case 3: 
-                setTimeout(function() { player.pause(); }, 10000);
+                i = 11;
+                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
+                setTimeout(function() { player.pause(); clearInterval(result);}, 10000);
+                
                 break;
         }
     });
