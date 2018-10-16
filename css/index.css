@@ -9,8 +9,8 @@
 }
 
 body{
-    background:url(../src/image/background.jpg) no-repeat fixed center;
-    
+    /*background:url(../src/image/background.jpg) no-repeat fixed center; */
+    background-image: white;
 }
 
 header,footer{
