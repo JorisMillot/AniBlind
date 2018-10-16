@@ -28,6 +28,7 @@ footer{
 
 #game{
     display: none;
+    color: white;
 }
 
 #headerTitle{
@@ -82,4 +83,13 @@ footer{
   .playButton:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  .circle-audio-player {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  #playerContainer {
+    padding: 24px;
   }
