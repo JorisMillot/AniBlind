@@ -36,6 +36,14 @@ footer{
     font-family: "Anime Ace Regular",serif;
 }
 
+#audioPlayer{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid black;
+}
+
 .playButton,.rulesText{
     font-family: "Open Sans";
 }
@@ -90,6 +98,4 @@ footer{
     margin: 0 auto;
     cursor: pointer;
   }
-  #playerContainer {
-    padding: 24px;
-  }
+  
