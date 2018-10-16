@@ -40,6 +40,7 @@
                         tempor </p>
 
                 </div>
+                <br>
                 <p>Choose dificulty</p>
                 <select name="difficulty" id="difficultySelect" onchange="setDifficulty()">
                     <option value="1">Easy</option>
@@ -63,10 +64,11 @@
                     <div class="autocomplete" style="width:300px;">
                         <input id="myInput" type="text" placeholder="Test">
                       </div>
-                      <input type="submit">
+                      <input type="submit" onclick="displayNextButton()">
                       </div>
                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                      <button class="playButton" onclick="nextSong()">Next</button>
+                       <p id="score">0 points</p>   
+                      <button class="playButton" id="nextButton" onclick="nextSong()">Next</button>
                     </div>
                 </div>
                 
