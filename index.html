@@ -11,8 +11,9 @@
     <script src="js/blindtest.js"></script>
 
     <script src="js/accueil.js"></script>
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -53,28 +54,31 @@
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="loaderColumn">
                         <div id="audioPlayer">
-                                <i class="fas fa-play fa-4x"></i>
+                            <i class="fas fa-play fa-4x"></i>
                         </div>
                         <br>
-                        <p id="result">Result : </p>  
+                        <p id="currentTime"></p>
+                        <br>
+                        <p id="result">Result : </p>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="animeImageColumn">
-                            <img src="" id="animeImageImg" alt="Anime Image">
+                        <img src="" id="animeImageImg" alt="Anime Image">
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div class="autocomplete" style="width:300px;">
-                        <input id="myInput" type="text" placeholder="Test">
-                      </div>
-                      <input type="submit" onclick="validerReponse()" value="Validate">
-                      </div>
-                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                       <p id="score">0 points</p>   
-                      <button class="playButton" id="nextButton" onclick="nextSong()">Next</button>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="autocomplete" style="width:300px;">
+                                <br>
+                            <input id="myInput" type="text" placeholder="Type your result">
+                        </div>
+                        <input type="submit" onclick="validerReponse()" value="Validate">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <p id="score">0 points</p>
+                        <button class="playButton" id="nextButton" onclick="nextSong()">Next</button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
