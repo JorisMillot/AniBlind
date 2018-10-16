@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Anime Ace Regular";
+    src: url("../src/font/animeace_reg.ttf");
+   }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +23,24 @@ footer{
     bottom: 0;
     width: 100%;
     color: #BC002D;
+    font-weight: bold;
+}
+
+#game{
+    display: none;
 }
 
 #headerTitle{
-    font-size: 16px;
+    font-size: 50px;
+    font-family: "Anime Ace Regular",serif;
+}
+
+.playButton,.rulesText{
+    font-family: "Open Sans";
 }
 
 .row{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .rulesText{
