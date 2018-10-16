@@ -7,3 +7,7 @@ function displayGame(){
 function displayNextButton(){
     document.getElementById("nextButton").style.visibility = "visible";
 }
+
+function initDocument(){
+    autocomplete(document.getElementById("myInput"), ["Jojo 1", "Pas Jojo", "Joja 1"]);
+}

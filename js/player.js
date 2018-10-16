@@ -1,6 +1,6 @@
-var player = new Audio();
 var difficulty = 1;
 var currentSong;
+var currentPlayer;
 
 function nextSong(){
     document.getElementById("result").style.visibility = "hidden";
@@ -9,6 +9,8 @@ function nextSong(){
 }
 
 function playAudio(songIndex){
+    let player = new Audio();
+    currentPlayer = player;
     var song = data[songIndex];
     var audiopath = 'src/audio/'+song.url_audio;
     player.src = audiopath;

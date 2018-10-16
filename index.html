@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="js/autocomplete.js"></script>
+
     <script src="src/data.js"></script>
     <script src="js/player.js"></script>
     <script src="js/blindtest.js"></script>
@@ -15,7 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="initDocument()">
     <header>
         <p id="headerTitle">AniBlind</p>
     </header>
@@ -67,7 +70,7 @@
                     <div class="autocomplete" style="width:300px;">
                         <input id="myInput" type="text" placeholder="Test">
                       </div>
-                      <input type="submit" onclick="validerReponse()" value="Validate">
+                      <input type="submit" onclick="validerReponse()" id="validateBtn" value="Validate">
                       </div>
                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                        <p id="score">0 points</p>   
