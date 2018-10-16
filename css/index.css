@@ -10,6 +10,7 @@
 
 body{
     background:url(../src/image/background.jpg) no-repeat fixed center;
+    
 }
 
 header,footer{
@@ -26,6 +27,14 @@ footer{
     font-weight: bold;
 }
 
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 215px;
+    height: 278.56px;
+}
+
 #game{
     display: none;
     color: white;
@@ -40,13 +49,25 @@ footer{
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    border: 3px solid black;
+    background-color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#loaderColumn{
     
-    border: 5px solid black;
+}
+
+#audioPlayer{
+    
 }
 
 .playButton,.rulesText{
     font-family: "Open Sans";
 }
+
+
 
 .row{
     margin-top: 5%;
@@ -99,3 +120,8 @@ footer{
     cursor: pointer;
   }
   
+  .fa-play{
+    display: inline-block;
+    color: #BC002D;
+    
+  }
