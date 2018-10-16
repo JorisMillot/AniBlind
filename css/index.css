@@ -70,6 +70,11 @@ img {
     visibility: hidden;
 }
 
+#difficultyText{
+    color: white;
+    font-family: "Open Sans";
+}
+
 .playButton,.rulesText{
     font-family: "Open Sans";
 }
@@ -166,6 +171,7 @@ img {
     top: 100%;
     left: 0;
     right: 0;
+    color: black;
   }
   
   .autocomplete-items div {
