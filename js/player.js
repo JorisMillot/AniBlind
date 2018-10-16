@@ -3,6 +3,7 @@ var difficulty = 1;
 var currentSong;
 
 function nextSong(){
+    document.getElementById("result").style.visibility = "hidden";
     currentSong = Math.floor(Math.random()*(data.length));
     playAudio(currentSong);
 }
