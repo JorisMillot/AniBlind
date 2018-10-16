@@ -15,6 +15,7 @@ function playAudio(songIndex){
     timestampIndex = Math.floor(timestampIndex);
     player.currentTime = song.timestamp[timestampIndex];
     player.play();
+    document.getElementById("animeImageImg").style.filter = "blur(10px)";
     document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
     switch(difficulty){
         case 1: 
@@ -27,8 +28,4 @@ function playAudio(songIndex){
             setTimeout(function() { player.pause(); }, 10000);
             break;
     }
-}
-
-function setDifficulty(){
-    difficulty = parseInt(document.getElementById('difficultySelect').value);
 }
