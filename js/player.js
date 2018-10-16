@@ -5,6 +5,7 @@ var result;
 var i;
 
 function nextSong(){
+    document.getElementById("myInput").disabled = false;
     document.getElementById("result").style.visibility = "hidden";
     currentSong = Math.floor(Math.random()*(data.length));
     playAudio(currentSong);
