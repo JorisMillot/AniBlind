@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background:url(../src/image/background.jpg) no-repeat fixed center;
+}
+
 header,footer{
     padding: 1%;
     text-align: center;
@@ -30,7 +34,7 @@ footer{
 }
 
 .container{
-    padding: 20px;
+    padding: 50px;
     background-color: #BC002D;
     border-radius: 3%;
     text-align: center;
