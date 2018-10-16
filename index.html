@@ -10,6 +10,8 @@
     <script src="js/outils.js"></script>
 
     <script src="js/accueil.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body>
@@ -48,11 +50,18 @@
             <div id="game">
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="loaderColumn">
-                        <div id="audioPlayer"></div>
+                        <div id="audioPlayer">
+                                <i class="fas fa-play fa-3x"></i>
+                        </div>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="animeImageColumn">
-                        2 of 2
+                            <img src="" alt="animeImage">
                     </div>
+                </div>
+                <div class="row">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="myInput" type="text" placeholder="Test">
+                      </div>
                 </div>
             </div>
         </div>
