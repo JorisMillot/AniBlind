@@ -1,4 +1,4 @@
-{
+var data = {
     "1": {
         "title_en": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
         "title_jp": "JoJo no Kimyou na Bouken: Diamond wa Kudakenai",
@@ -6,7 +6,7 @@
         "url_audio": "1.mp3",
         "url_image": "1.jpg",
         "timestamp": [
-
+            
         ]
     },
     "2":{
