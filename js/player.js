@@ -1,13 +1,13 @@
 var player = new Audio();
 var difficulty = 1;
+var currentSong;
 
 function nextSong(){
-    let songIndex = Math.random()*(data.length);
-    playAudio(Math.floor(songIndex));
+    currentSong = Math.floor(Math.random()*(data.length));
+    playAudio(currentSong);
 }
 
 function playAudio(songIndex){
-    //Todo : attendre le load avant de continuer
     var song = data[songIndex];
     var audiopath = 'src/audio/'+song.url_audio;
     player.src = audiopath;
