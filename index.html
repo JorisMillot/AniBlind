@@ -9,6 +9,8 @@
     <script src="src/data.js"></script>
     <script src="js/outils.js"></script>
 
+    <script src="js/accueil.js"></script>
+    <script src="js/audioPlayer.js"></script>
 </head>
 
 <body>
@@ -19,21 +21,44 @@
         <div class="container">
             <div id="rules">
                 <div class="row">
-                        <button class="playButton">Play</button>
+                    <button class="playButton" onclick="displayGame()">Play</button>
                 </div>
                 <div class="row">
-                        <p class="rulesText">Rules :</p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                        <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                </div>
+                    <p class="rulesText">Rules :</p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
+                    <p class="rulesText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor </p>
 
+                </div>
+                <label>Choose dificulty</label>
+                <select name="difficulty">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select>
+            </div>
+            <div id="game">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="loaderColumn">
+                        <div id="audioPlayer"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="animeImageColumn">
+                        2 of 2
+                    </div>
+                </div>
+                test
             </div>
         </div>
+
     </section>
     <footer>
         <p id="footerText">Made by Kévin Faurie and Joris Millot. We own nothing.</p>
