@@ -21,6 +21,13 @@ function playAudio(songIndex){
     timestampIndex = Math.floor(timestampIndex);
     player.currentTime = song.timestamp[timestampIndex];
 
+    let isDone = false;
+
+    document.getElementById("validateBtn").onclick = function(){
+        validerReponse();
+        isDone = true;
+    }
+
     player.play().then(function (){
         document.getElementById("currentTime").innerText = "";
         //result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ (player.currentTime.toFixed(0) - song.timestamp[timestampIndex])+ ' s';},1000);
@@ -28,20 +35,34 @@ function playAudio(songIndex){
         document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
         switch(difficulty){
             case 1: 
-                i = 31;
+                i = 30;
                 result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { player.pause(); clearInterval(result);}, 30000);
+                setTimeout(function() { 
+                    if(isDone !== true){
+                        validerReponse();
+                    }
+                   
+                }, 30000);
                 break;
             case 2: 
-                i = 21;
+                i = 20;
                 result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { player.pause(); clearInterval(result);}, 20000);
+                setTimeout(function() { 
+                    if(isDone !== true){
+                        validerReponse();
+                    }
+                   
+                }, 20000);
                 break;
             case 3: 
-                i = 11;
+                i = 10;
                 result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { player.pause(); clearInterval(result);}, 10000);
-                
+                setTimeout(function() { 
+                    if(isDone !== true){
+                        validerReponse();
+                    }
+                    
+                }, 10000);
                 break;
         }
     });
