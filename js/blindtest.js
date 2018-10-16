@@ -15,8 +15,10 @@ function validerReponse(){
         document.getElementById("resultText").innerHTML = "Right ! 10 point earned."
     }else if(playerResponse === ""){
         document.getElementById("resultText").innerHTML = "Wrong ! You forgot to choose a response. 0 point earned."
+        document.getElementById("lives").removeChild( document.getElementById("lives").getElementsByTagName('i')[0]);
     }else{
         document.getElementById("resultText").innerHTML = "Wrong ! 0 point earned."
+        document.getElementById("lives").removeChild(document.getElementById("lives").getElementsByTagName('i')[0]);
     }
 
     clearInterval(result);
@@ -29,4 +31,8 @@ function validerReponse(){
         localStorage.setItem('AniBlindRank',score);
     }
 
+    if(document.getElementById("lives").getElementsByTagName('i').length === 0){
+        document.getElementById("resultText").innerHTML = "You lost your lives."
+        setTimeout(function(){location.href = "index.html"},3000)
+    }
 }

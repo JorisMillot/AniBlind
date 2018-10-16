@@ -31,7 +31,6 @@ function playAudio(songIndex){
 
     player.play().then(function (){
         document.getElementById("currentTime").innerText = "";
-        //result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ (player.currentTime.toFixed(0) - song.timestamp[timestampIndex])+ ' s';},1000);
         document.getElementById("animeImageImg").style.filter = "blur(10px)";
         document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
         switch(difficulty){
