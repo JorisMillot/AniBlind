@@ -66,6 +66,10 @@ img {
     visibility: hidden;
 }
 
+#result{
+    visibility: hidden;
+}
+
 .playButton,.rulesText{
     font-family: "Open Sans";
 }
