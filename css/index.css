@@ -139,6 +139,10 @@ img {
     color: black;
   }
   
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+  }
   
   .autocomplete-items {
     position: absolute;
