@@ -35,34 +35,34 @@ function playAudio(songIndex){
         document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
         switch(difficulty){
             case 1: 
-                i = 30;
-                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { 
-                    if(isDone !== true){
+                i = 31;
+                result = setInterval(function(){
+                    i--;
+                    document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';
+                    if(i <= 0){
                         validerReponse();
                     }
-                   
-                }, 30000);
+                },1000);
                 break;
             case 2: 
-                i = 20;
-                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { 
-                    if(isDone !== true){
+                i = 21;
+                result = setInterval(function(){
+                    i--;
+                    document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';
+                    if(i <= 0){
                         validerReponse();
                     }
-                   
-                }, 20000);
+                },1000);
                 break;
             case 3: 
-                i = 10;
-                result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';i--;},1000);
-                setTimeout(function() { 
-                    if(isDone !== true){
+                i = 11;
+                result = setInterval(function(){
+                    i--;
+                    document.getElementById("currentTime").innerText = 'Time : '+ i + ' s';
+                    if(i <= 0){
                         validerReponse();
                     }
-                    
-                }, 10000);
+                },1000);
                 break;
         }
     });
