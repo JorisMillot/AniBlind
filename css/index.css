@@ -140,10 +140,10 @@ img {
   }
   
   input[type=submit] {
-    background-color: DodgerBlue;
-    color: #fff;
+    background-color: white;
+    color: black;
   }
-  
+
   .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
