@@ -1,6 +1,6 @@
 var data = [
     {
-        "title_en": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
+        "title_en": "JoJo Bizarre Adventure: Diamond is Unbreakable",
         "title_jp": "JoJo no Kimyou na Bouken: Diamond wa Kudakenai",
         "sound_name": "Great Days",
         "url_audio": "1.mp3",
@@ -12,7 +12,7 @@ var data = [
         ]
     },
     {
-        "title_en": "JoJo's Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
+        "title_en": "JoJo Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
         "title_jp": "JoJo no Kimyou na Bouken: Stardust Crusaders - Egypt-hen",
         "sound_name": "JoJo - Sono Chi no Kioku: end of THE WORLD",
         "url_audio": "2.mp3",
