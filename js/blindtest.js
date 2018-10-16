@@ -17,4 +17,8 @@ function validerReponse(){
     document.getElementById("result").style.visibility = "visible";
     document.getElementById("result").innerText = 'Result : '+data[currentSong].title_en;
     displayNextButton();
+
+    if(score > localStorage.getItem('AniBlindRank')){
+        localStorage.setItem('AniBlindRank',score);
+    }
 }

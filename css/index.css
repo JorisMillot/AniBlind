@@ -70,7 +70,7 @@ img {
     visibility: hidden;
 }
 
-#difficultyText{
+#difficultyText,#rank{
     color: white;
     font-family: "Open Sans";
 }

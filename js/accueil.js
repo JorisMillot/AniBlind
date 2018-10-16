@@ -12,6 +12,12 @@ function initDocument(){
     loadAutoComplete().then(function (data){
         autocomplete(document.getElementById("myInput"), data);
     });
+    
+    if(localStorage.getItem('AniBlindRank') === null){
+        localStorage.setItem('AniBlindRank',0);
+    }else{
+        document.getElementById("rank").innerHTML = 'Your best score : ' + localStorage.getItem('AniBlindRank');
+    }
 }
 
 function loadAutoComplete(){
