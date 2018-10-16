@@ -10,7 +10,6 @@
     <script src="js/outils.js"></script>
 
     <script src="js/accueil.js"></script>
-    <script src="js/audioPlayer.js"></script>
 </head>
 
 <body>
@@ -40,7 +39,7 @@
 
                 </div>
                 <label>Choose dificulty</label>
-                <select name="difficulty">
+                <select name="difficulty" id="difficultySelect" onchange="setDifficulty()">
                     <option value="1">Easy</option>
                     <option value="2">Medium</option>
                     <option value="3">Hard</option>
@@ -55,7 +54,6 @@
                         2 of 2
                     </div>
                 </div>
-                test
             </div>
         </div>
 
