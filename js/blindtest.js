@@ -12,6 +12,7 @@ function validerReponse(){
         score+= 10;
         document.getElementById("score").innerText = score+' points';
     }
+    clearInterval(result);
     document.getElementById("animeImageImg").style.filter = "blur(0px)";
     document.getElementById("result").style.visibility = "visible";
     document.getElementById("result").innerText = 'Result : '+data[currentSong].title_en;

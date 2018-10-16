@@ -1,6 +1,7 @@
 var difficulty = 1;
 var currentSong;
 var currentPlayer;
+var result;
 
 function nextSong(){
     document.getElementById("result").style.visibility = "hidden";
@@ -18,9 +19,11 @@ function playAudio(songIndex){
     var timestampIndex = Math.random()*song.timestamp.length;
     timestampIndex = Math.floor(timestampIndex);
     player.currentTime = song.timestamp[timestampIndex];
-    player.play().then(function (){
-        // setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+player.currentTime.toFixed(0)+ ' s';},1000);
 
+    player.play().then(function (){
+
+        document.getElementById("currentTime").innerText = "";
+        result = setInterval(function(){document.getElementById("currentTime").innerText = 'Time : '+ (player.currentTime.toFixed(0) - song.timestamp[timestampIndex])+ ' s';},1000);
         document.getElementById("animeImageImg").style.filter = "blur(10px)";
         document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
         switch(difficulty){
