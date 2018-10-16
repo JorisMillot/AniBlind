@@ -1,16 +1,34 @@
 var player = new Audio();
 var difficulty = 1;
 
-function getRandomSong(){
-    //TODO
+function nextSong(){
+    let songIndex = Math.random()*(data.length);
+    playAudio(Math.floor(songIndex));
 }
 
-function playAudio(){
-    let audiopath = 'src/audio/'+data[1].url_audio;
+function playAudio(songIndex){
+    //Todo : attendre le load avant de continuer
+    var song = data[songIndex];
+    var audiopath = 'src/audio/'+song.url_audio;
     player.src = audiopath;
-    player.currentTime = 20;
+    var timestampIndex = Math.random()*song.timestamp.length;
+    timestampIndex = Math.floor(timestampIndex);
+    player.currentTime = song.timestamp[timestampIndex];
     player.play();
-    /*switch(difficulty){
-        setTimeout(function() { player.pause(); }, 3000);
-    }*/
+    document.getElementById("animeImageImg").setAttribute("src","src/image/"+song.url_image);
+    switch(difficulty){
+        case 1: 
+            setTimeout(function() { player.pause(); }, 30000);
+            break;
+        case 2: 
+            setTimeout(function() { player.pause(); }, 20000);
+            break;
+        case 3: 
+            setTimeout(function() { player.pause(); }, 10000);
+            break;
+    }
+}
+
+function setDifficulty(){
+    difficulty = parseInt(document.getElementById('difficultySelect').value);
 }
