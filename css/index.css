@@ -27,6 +27,11 @@ footer{
     font-weight: bold;
 }
 
+a{
+    color:#BC002D !important;
+    text-decoration: none !important;
+}
+
 img {
     border-radius: 4px;
     padding: 5px;
