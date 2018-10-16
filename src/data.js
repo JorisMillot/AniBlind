@@ -31,4 +31,14 @@ var data = [
             0
         ]
     },
+    {
+        "title_en": "Laid-Back Camp",
+        "title_jp": "Yuru Camp△",
+        "sound_name": "SHINY DAYS",
+        "url_audio": "4.mp3",
+        "url_image": "4.jpg",
+        "timestamp": [
+            0
+        ]
+    },
 ]
