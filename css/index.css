@@ -304,3 +304,12 @@ input[type=submit] {
         height: 198.56px;
     }
 }
+
+@media (max-width: 420px) {
+    .container {
+        margin-top: 20%;
+        margin-bottom: 20%;
+        height: 90%;
+    }
+
+}
