@@ -25,7 +25,8 @@ function loadAutoComplete(){
         var animeList = new Array();
         data.forEach(function(value, key){
             animeList.push(value.title_en);
-            animeList.push(value.title_jp);            
+            if(value.title_jp !== value.title_en)
+                animeList.push(value.title_jp);        
         });
         succes(animeList);
     });
