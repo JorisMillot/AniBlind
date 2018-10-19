@@ -17,6 +17,7 @@ var data = [
         "sound_name": "JoJo - Sono Chi no Kioku: end of THE WORLD",
         "url_audio": "2.mp3",
         "url_image": "2.jpg",
+        "url_video": "2.webm",
         "timestamp": [
             0
         ]
