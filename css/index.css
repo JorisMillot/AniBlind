@@ -85,8 +85,8 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    height: 60%;
-    width: 40%;
+    height: 65%;
+    width: 35%;
 }
 
 .playButton {
@@ -213,7 +213,7 @@ input[type=submit] {
     }
 
     .container {
-        height: 50%;
+        height: 55%;
         width: 40%;
     }
 
