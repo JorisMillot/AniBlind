@@ -5,6 +5,7 @@ var data = [
         "sound_name": "Great Days",
         "url_audio": "1.mp3",
         "url_image": "1.jpg",
+        "url_video": "1.webm",
         "timestamp": [
             0,
             53,
@@ -17,16 +18,7 @@ var data = [
         "sound_name": "JoJo - Sono Chi no Kioku: end of THE WORLD",
         "url_audio": "2.mp3",
         "url_image": "2.jpg",
-        "timestamp": [
-            0
-        ]
-    },
-    {
-        "title_en": "Prison School",
-        "title_jp": "Kangoku Gakuen",
-        "sound_name": "Ai no Prison",
-        "url_audio": "3.mp3",
-        "url_image": "3.jpg",
+        "url_video": "2.webm",
         "timestamp": [
             0
         ]
@@ -37,8 +29,21 @@ var data = [
         "sound_name": "SHINY DAYS",
         "url_audio": "4.mp3",
         "url_image": "4.jpg",
+        "url_video": "4.webm",
         "timestamp": [
             0
+        ]
+    },
+    {
+        "title_en": "Attack on Titan",
+        "title_jp": "Shingeki no Kyojin",
+        "sound_name": "Guren no Yumiya",
+        "url_audio": "5.mp3",
+        "url_image": "5.jpg",
+        "url_video": "5.webm",
+        "timestamp": [
+            36,
+            67
         ]
     },
 ]
