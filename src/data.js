@@ -7,7 +7,6 @@ var data = [
         "timestamp": [
             0,
             53,
-            164
         ]
     },
     {
@@ -118,7 +117,7 @@ var data = [
         ]
     },
     {
-        "title_en": "Pokémon",
+        "title_en": "Pokemon",
         "title_jp": "Pocket Monsters",
         "url_audio": "14.mp3",
         "url_image": "14.png",
