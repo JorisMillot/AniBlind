@@ -67,7 +67,7 @@ img {
     display: none;
 }
 
-.container{
+#id{
     padding: 50px;
     background-color: #BC002D;
     border-radius: 3%;
@@ -82,7 +82,7 @@ img {
     width: 40%;
 }
 
-.playButton {
+.button {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -95,7 +95,7 @@ img {
     box-shadow: 0 9px #999;
   }
 
-  .playButton:active {
+  .button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }

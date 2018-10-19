@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="js/autocomplete.js"></script>
-
     <script src="src/data.js"></script>
     <script src="js/player.js"></script>
     <script src="js/blindtest.js"></script>
-
     <script src="js/accueil.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -24,10 +22,10 @@
         </a>
     </header>
     <section>
-        <div class="container">
+        <div id="container">
 
             <div id="rules">
-                <button class="playButton" onclick="displayGame()">Play</button>
+                <button class="button" onclick="displayGame()">Play</button>
                 <p class="rulesText">
                     Rules :
                 </p>
@@ -89,7 +87,7 @@
                         <input type="submit" id="validateBtn" value="Validate">
                     </div>
                     <div class="columnInformatons">
-                        <button class="playButton" id="nextButton" onclick="nextSong()">Next</button>
+                        <button class="button" id="nextButton" onclick="nextSong()">Next</button>
                     </div>
                 </div>
 
