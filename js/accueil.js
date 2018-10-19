@@ -18,12 +18,6 @@ function initDocument(){
     }else{
         document.getElementById("rank").innerHTML = 'Your best score : ' + localStorage.getItem('AniBlindRank');
     }
-    randomNumber = Math.floor(Math.random() * (data.length));
-    var video = document.getElementById('backgroundVideo');
-    var source = document.createElement('source');
-    source.setAttribute('src', 'src/video/' + randomNumber + '.webm');
-    video.appendChild(source);
-    
 }
 
 function loadAutoComplete(){
