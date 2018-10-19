@@ -1,4 +1,9 @@
+#Description : 
+
 Projet réalisé dans le cadre d'un cours d'HTML par Joris MILLOT et Kévin FAURIE.
+Il s'agit d'une application de blind test d'animé japonais.
+
+#Installation :
 
 Pour utiliser cette application vous pouvez : 
 
@@ -8,4 +13,4 @@ Pour utiliser cette application vous pouvez :
 
 # 
 
-Régles du jeu :
+#Régles du jeu :
