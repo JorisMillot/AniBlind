@@ -15,6 +15,8 @@ function initDocument(){
     
     if(localStorage.getItem('AniBlindRank') === null){
         localStorage.setItem('AniBlindRank',0);
+    }else if(localStorage.getItem('AniBlindRank') === "0"){
+        document.getElementById("rank").innerHTML = 'Your best score : 0';
     }else{
         document.getElementById("rank").innerHTML = 'Your best score : ' + localStorage.getItem('AniBlindRank');
     }
