@@ -16,7 +16,6 @@ function playAudio(songIndex) {
     let player = new Audio();
     currentPlayer = player;
     player.volume = 0.5;
-    //songIndex = data.length - 1; // enable for TEST ONLY
     var song = data[songIndex];
     var audiopath = 'src/audio/' + song.url_audio;
     player.src = audiopath;
