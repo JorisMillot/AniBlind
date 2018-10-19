@@ -9,8 +9,12 @@
 }
 
 body{
-    /*background:url(../src/image/background.jpg) no-repeat fixed center; */
     background-image: white;
+}
+
+a{
+    color:#BC002D !important;
+    text-decoration: none !important;
 }
 
 header,footer{
@@ -27,11 +31,6 @@ footer{
     font-weight: bold;
 }
 
-a{
-    color:#BC002D !important;
-    text-decoration: none !important;
-}
-
 img {
     border-radius: 4px;
     padding: 5px;
@@ -39,60 +38,35 @@ img {
     height: 278.56px;
 }
 
-#game{
-    display: none;
-    color: white;
-}
+
 
 #headerTitle{
     font-size: 50px;
     font-family: "Anime Ace Regular",serif;
 }
 
-#audioPlayer{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid black;
-    background-color: white;
-    float: none;
-    margin: 0 auto;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20%;
-}
-
-#loaderColumn{
-    height: 280px;
-}
-
-#nextButton{
-    visibility: hidden;
-}
-
-#result{
-    visibility: hidden;
-}
-
 #difficultyText,#rank{
     color: white;
-    font-family: "Open Sans";
+    margin-top: 3%;
+    font-size: 18px;
 }
 
-.playButton,.rulesText{
-    font-family: "Open Sans";
+#difficultySelect{
+    margin-top: 2%;
+    width: 15% !important;
 }
 
-
-
-.row{
-    margin-top: 5%;
-}
-
-.rulesText{
+#result,#resultText,#lives,#score,#currentTime{
     color: white;
-    font-size: 16px;
+    white-space: pre-line;
+}
+
+#nextButton,#result{
+    visibility: hidden;
+}
+
+#game{
+    display: none;
 }
 
 .container{
@@ -100,8 +74,6 @@ img {
     background-color: #BC002D;
     border-radius: 3%;
     text-align: center;
-    max-width: 50%;
-    max-height: 60%;
     position: absolute;
     top:0;
     bottom: 0;
@@ -109,7 +81,7 @@ img {
     right: 0;
     margin: auto;
     height: 60%;
-    width: 50%;
+    width: 40%;
 }
 
 .playButton {
@@ -124,31 +96,69 @@ img {
     border-radius: 15px;
     box-shadow: 0 9px #999;
   }
-  
-  
+
   .playButton:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
 
-  .circle-audio-player {
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-  }
+  .rulesText{
+    font-size: 18px;
+    font-family: "Open Sans";
+    margin-top: 5%;  
+    color: white;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    height: 350px; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.columnInformatons{
+    height: 150px; 
+    float: left;
+    width: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.columnResult{
+    height: 100px; 
+    float: left;
+    width: 50%;
+    align-items:center;
+    justify-content:center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
   
   .fa-play{
     color: #BC002D;
   }
 
-  
-.autocomplete {
-    /*the container must be positioned relative:*/
-    position: relative;
-    display: inline-block;
-  }
-  
-  input {
+  #audioPlayer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: white;
+}
+
+input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
@@ -172,10 +182,6 @@ img {
     border-bottom: none;
     border-top: none;
     z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
     color: black;
   }
   
@@ -196,3 +202,108 @@ img {
     background-color: DodgerBlue !important; 
     color: #ffffff; 
   }
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    #headerTitle{
+        font-size: 45px;
+    }
+
+    .container{
+        height: 50%;
+        width: 40%;
+    }
+
+    .rulesText{
+        font-size: 16px;
+    }
+
+    .columnInformatons{
+        height: 50px;
+    }
+
+    #audioPlayer{
+        height: 125px;
+        width: 125px;
+    }
+
+   img{
+    width: 185px;
+    height: 248.56px;
+   }
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    #headerTitle{
+        font-size: 40px;
+    }
+
+    .container{
+        height: 50%;
+        width: 50%;
+    }
+
+    .rulesText{
+        font-size: 13px;
+    }
+
+    .columnInformatons{
+        height: 50px;
+    }
+
+    #difficultyText,#rank{
+        font-size: 13px;
+    }
+
+    #audioPlayer{
+        height: 115px;
+        width: 115px;
+    }
+
+   img{
+    width: 165px;
+    height: 228.56px;
+   }
+ }  
+
+/* Landscape phones and down */
+@media (max-width: 600px) { 
+    
+    .container{
+        height: 80%;
+    }
+
+    #headerTitle{
+        font-size: 30px;
+    }
+
+    .column {
+        width: 100%;
+        height: 200px;
+    }
+
+    .columnInformatons{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .columnResult{
+        margin-top: 10%;
+        overflow: scroll;
+    }
+    
+
+    #audioPlayer{
+        height: 95px;
+        width: 95px;
+    }
+
+
+   img{
+    width: 135px;
+    height: 198.56px;
+   }
+ }

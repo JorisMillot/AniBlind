@@ -2,10 +2,8 @@
 
 <head>
     <title>AniBlind</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" media="screen" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="js/autocomplete.js"></script>
 
@@ -21,81 +19,82 @@
 
 <body onload="initDocument()">
     <header>
-        <a href="index.html" style=""><p id="headerTitle">AniBlind</p></a>
+        <a href="index.html">
+            <p id="headerTitle">AniBlind</p>
+        </a>
     </header>
     <section>
         <div class="container">
-            <div id="rules">
-                <div class="row">
-                    <button class="playButton" onclick="displayGame()">Play</button>
-                </div>
-                <div class="row">
-                    <p class="rulesText">
-                        Rules :
-                    </p>
-                    <p class="rulesText">
-                        You'll have to guess the name of the anime based on the song played.
-                    </p>
-                    <p class="rulesText">
-                        You'll only have a certain amount of time to guess the anime.
-                    </p>
-                    <p class="rulesText">
-                        You'll have less time to guess the anime on higher difficulties.
-                    </p>
-                    <p class="rulesText">
-                        An auto completion list will appear when you type the anime's name.
-                    </p>
-                    <p class="rulesText">
-                        Please select one option from this list to avoid typing error.
-                    </p>
-                    <p class="rulesText">
-                        Have fun !
-                    </p>
 
-                </div>
-                <div class="row">
-                    <p id="difficultyText">Choose dificulty</p>
-                    <select name="difficulty" id="difficultySelect" onchange="setDifficulty()" style="width:10%;">
-                        <option value="1">Easy</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Hard</option>
-                    </select>
-                </div>
-                
-                <p id="rank"></p>
-           
+            <div id="rules">
+                <button class="playButton" onclick="displayGame()">Play</button>
+                <p class="rulesText">
+                    Rules :
+                </p>
+                <p class="rulesText">
+                    You'll have to guess the name of the anime based on the song played.
+                </p>
+                <p class="rulesText">
+                    You'll only have a certain amount of time to guess the anime.
+                </p>
+                <p class="rulesText">
+                    You'll have less time to guess the anime on higher difficulties.
+                </p>
+                <p class="rulesText">
+                    An auto completion list will appear when you type the anime's name.
+                </p>
+                <p class="rulesText">
+                    Please select one option from this list to avoid typing error.
+                </p>
+                <p class="rulesText">
+                    Have fun !
+                </p>
+
+                <p id="difficultyText">Choose dificulty</p>
+                <select name="difficulty" id="difficultySelect" onchange="setDifficulty()" style="width:10%;">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select>
+                <p id="rank">Your best score : </p>
             </div>
+
             <div id="game">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="loaderColumn">
+                    <div class="column">
                         <div id="audioPlayer">
-                            <i class="fas fa-play fa-4x"></i>
+                            <i class="fas fa-play fa-3x"></i>
                         </div>
-                        <br>
-                        <p id="currentTime"></p>
-                        <br>
-                        <p id="result">Result : </p>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="animeImageColumn">
+                    <div class="column">
                         <img src="" id="animeImageImg" alt="Anime Image">
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div class="autocomplete" style="width:300px;">
-                        <input id="myInput" type="text" placeholder="Type your result">
-                      </div>
-                        <input type="submit" id="validateBtn" value="Validate">
-                      </div>
-                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <p id="resultText"></p>   
-                        <p id="score">0 point </p>  
+                    <div class="columnResult">
+                        <p id="currentTime"></p>
+                        <p id="result">Result : Yahari Ore no Seishun Love Comedy wa Machigatteiru.</p>
+                    </div>
+                    <div class="columnResult">
+                        <p id="resultText">Wrong ! You forgot to choose a response. 0 point earned.</p><br>
+                        <p id="score">0 point </p><br>
                         <div id="lives"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columnInformatons">
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="myInput" type="text" placeholder="Type your result">
+                        </div>
+                        <input type="submit" id="validateBtn" value="Validate">
+                    </div>
+                    <div class="columnInformatons">
                         <button class="playButton" id="nextButton" onclick="nextSong()">Next</button>
                     </div>
                 </div>
 
             </div>
+        </div>
         </div>
 
     </section>
