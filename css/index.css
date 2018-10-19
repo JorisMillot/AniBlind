@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: white;
+   background: url(../src/image/background.gif) no-repeat fixed;
 }
 
 a {
