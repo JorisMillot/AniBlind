@@ -38,6 +38,7 @@ img {
     height: 278.56px;
 }
 
+
 #headerTitle{
     font-size: 50px;
     font-family: "Anime Ace Regular",serif;
@@ -67,7 +68,7 @@ img {
     display: none;
 }
 
-#id{
+.container{
     padding: 50px;
     background-color: #BC002D;
     border-radius: 3%;
@@ -82,7 +83,7 @@ img {
     width: 40%;
 }
 
-.button {
+.playButton {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -95,7 +96,7 @@ img {
     box-shadow: 0 9px #999;
   }
 
-  .button:active {
+  .playButton:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
