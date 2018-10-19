@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #BC002D !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
@@ -28,7 +28,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #BC002D;
+    color: white;
     font-weight: bold;
 }
 
