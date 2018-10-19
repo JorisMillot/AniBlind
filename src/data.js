@@ -74,7 +74,56 @@ var data = [
         "url_audio": "9.mp3",
         "url_image": "9.png",
         "timestamp": [
+            0,
+            48
+        ]
+    },
+    {
+        "title_en": "Tokyo Ghoul",
+        "title_jp": "Tokyo Ghoul",
+        "url_audio": "10.mp3",
+        "url_image": "10.jpg",
+        "timestamp": [
+            0,
+            62
+        ]
+    },
+    {
+        "title_en": "Bakemonogatari",
+        "title_jp": "Bakemonogatari",
+        "url_audio": "11.mp3",
+        "url_image": "11.jpg",
+        "timestamp": [
             0
+        ]
+    },
+    {
+        "title_en": "JoJo Bizarre Adventure",
+        "title_jp": "JoJo no Kimyou na Bouken",
+        "url_audio": "12.mp3",
+        "url_image": "12.jpg",
+        "timestamp": [
+            0,
+            60
+        ]
+    },
+    {
+        "title_en": "My Hero Academia",
+        "title_jp": "Boku no Hero Academia",
+        "url_audio": "13.mp3",
+        "url_image": "13.jpg",
+        "timestamp": [
+            0,
+            62
+        ]
+    },
+    {
+        "title_en": "Pokémon",
+        "title_jp": "Pocket Monsters",
+        "url_audio": "14.mp3",
+        "url_image": "14.png",
+        "timestamp": [
+            0,
         ]
     },
 ]

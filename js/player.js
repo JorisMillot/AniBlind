@@ -15,6 +15,7 @@ function nextSong() {
 function playAudio(songIndex) {
     let player = new Audio();
     currentPlayer = player;
+    //songIndex = data.length - 1; // enable for TEST ONLY
     var song = data[songIndex];
     var audiopath = 'src/audio/' + song.url_audio;
     player.src = audiopath;
@@ -22,11 +23,8 @@ function playAudio(songIndex) {
     timestampIndex = Math.floor(timestampIndex);
     player.currentTime = song.timestamp[timestampIndex];
 
-    let isDone = false;
-
     document.getElementById("validateBtn").onclick = function () {
         validerReponse();
-        isDone = true;
     }
 
     player.play().then(function () {
