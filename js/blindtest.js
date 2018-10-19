@@ -6,9 +6,9 @@ function setDifficulty(){
 
 function validerReponse(){
     currentPlayer.pause();
-    document.getElementById("myInput").disabled=true;
-    var playerResponse = document.getElementById('myInput').value;
-    document.getElementById('myInput').value = '';
+    document.getElementById("resultInput").disabled=true;
+    var playerResponse = document.getElementById('resultInput').value;
+    document.getElementById('resultInput').value = '';
     if(playerResponse === data[currentSong].title_en || playerResponse === data[currentSong].title_jp){
         score+= 10;
         document.getElementById("score").innerText = score+' points';

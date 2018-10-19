@@ -10,7 +10,7 @@ function displayNextButton(){
 
 function initDocument(){
     loadAutoComplete().then(function (data){
-        autocomplete(document.getElementById("myInput"), data);
+        autocomplete(document.getElementById("resultInput"), data);
     });
     
     if(localStorage.getItem('AniBlindRank') === null){
