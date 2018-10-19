@@ -6,6 +6,6 @@ Pour utiliser cette application vous pouvez :
 
 - Cloner le projet / télecharger le zip du projet puis lancer le fichier index.html à la racine du dossier.
 
--- 
+# 
 
 Régles du jeu :
